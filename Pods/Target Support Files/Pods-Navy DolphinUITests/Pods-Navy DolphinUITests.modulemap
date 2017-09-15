@@ -1,0 +1,6 @@
+framework module Pods_Navy_DolphinUITests {
+  umbrella header "Pods-Navy DolphinUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

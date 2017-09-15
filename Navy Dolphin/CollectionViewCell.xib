@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Navy_Dolphin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="277" height="414"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="277" height="414"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMQ-Kg-6AL">
+                        <rect key="frame" x="0.0" y="0.0" width="277" height="414"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="277" id="Vx2-rC-9ww"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="414" id="bpv-Hx-y1l"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="277" id="fAt-9f-RO3"/>
+                            <constraint firstAttribute="height" constant="414" id="o6I-GG-e5c"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ma-52-kBo">
+                        <rect key="frame" x="0.0" y="0.0" width="277" height="414"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="414" id="Zz9-9T-FEV"/>
+                            <constraint firstAttribute="width" constant="277" id="eeM-OP-iff"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5Ma-52-kBo" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="D6Y-qI-KWa"/>
+                <constraint firstItem="uMQ-Kg-6AL" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="KUW-Gg-ABt"/>
+                <constraint firstItem="uMQ-Kg-6AL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="hjw-Q3-cy6"/>
+                <constraint firstItem="5Ma-52-kBo" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pPP-wx-edZ"/>
+            </constraints>
+            <size key="customSize" width="277" height="414"/>
+            <connections>
+                <outlet property="backConstraintY" destination="D6Y-qI-KWa" id="ghk-1V-mak"/>
+                <outlet property="backContainerView" destination="5Ma-52-kBo" id="1Ss-Vn-sz1"/>
+                <outlet property="frontConstraintY" destination="KUW-Gg-ABt" id="ax1-zQ-3NS"/>
+                <outlet property="frontContainerView" destination="uMQ-Kg-6AL" id="JHd-Bj-iJP"/>
+            </connections>
+            <point key="canvasLocation" x="147.5" y="236"/>
+        </collectionViewCell>
+    </objects>
+</document>

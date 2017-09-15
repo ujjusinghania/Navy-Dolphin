@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1498DDE42E72936697A319AB /* Pods_Navy_DolphinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D7EB7A77FAE97D0A6A30D2 /* Pods_Navy_DolphinTests.framework */; };
+		BA76A8742561D3EFAA762F64 /* Pods_Navy_DolphinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32937494B694574150F6415B /* Pods_Navy_DolphinUITests.framework */; };
 		D91EDF1E1F6C6C390025C90F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF1D1F6C6C390025C90F /* AppDelegate.swift */; };
 		D91EDF201F6C6C390025C90F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF1F1F6C6C390025C90F /* FirstViewController.swift */; };
 		D91EDF221F6C6C390025C90F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF211F6C6C390025C90F /* SecondViewController.swift */; };
@@ -15,6 +17,10 @@
 		D91EDF2A1F6C6C390025C90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91EDF281F6C6C390025C90F /* LaunchScreen.storyboard */; };
 		D91EDF351F6C6C390025C90F /* Navy_DolphinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF341F6C6C390025C90F /* Navy_DolphinTests.swift */; };
 		D91EDF401F6C6C390025C90F /* Navy_DolphinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF3F1F6C6C390025C90F /* Navy_DolphinUITests.swift */; };
+		D91EDF4F1F6C6D7F0025C90F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF4D1F6C6D7F0025C90F /* CollectionViewCell.swift */; };
+		D91EDF501F6C6D7F0025C90F /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91EDF4E1F6C6D7F0025C90F /* CollectionViewCell.xib */; };
+		D9F381B11F6C85F700E644E2 /* ExpandingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */; };
+		ECE992CA8C90A68EAF98315A /* Pods_Navy_Dolphin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F6DB1A689F1AB7519BEFA7 /* Pods_Navy_Dolphin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07F6DB1A689F1AB7519BEFA7 /* Pods_Navy_Dolphin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Navy_Dolphin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32937494B694574150F6415B /* Pods_Navy_DolphinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Navy_DolphinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35563B05F65786BB8933504C /* Pods-Navy DolphinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Navy DolphinUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Navy DolphinUITests/Pods-Navy DolphinUITests.release.xcconfig"; sourceTree = "<group>"; };
+		758502958A53AB2F16359E8E /* Pods-Navy DolphinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Navy DolphinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Navy DolphinTests/Pods-Navy DolphinTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A153869A3AE6DDBE411C170 /* Pods-Navy DolphinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Navy DolphinUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Navy DolphinUITests/Pods-Navy DolphinUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBF1B10E56B6976CC18B0BF4 /* Pods-Navy Dolphin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Navy Dolphin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Navy Dolphin/Pods-Navy Dolphin.release.xcconfig"; sourceTree = "<group>"; };
+		D2A254031938978AD9C7DCE8 /* Pods-Navy DolphinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Navy DolphinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Navy DolphinTests/Pods-Navy DolphinTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D91EDF1A1F6C6C390025C90F /* Navy Dolphin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navy Dolphin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91EDF1D1F6C6C390025C90F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D91EDF1F1F6C6C390025C90F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +62,11 @@
 		D91EDF3B1F6C6C390025C90F /* Navy DolphinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Navy DolphinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91EDF3F1F6C6C390025C90F /* Navy_DolphinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navy_DolphinUITests.swift; sourceTree = "<group>"; };
 		D91EDF411F6C6C390025C90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D91EDF4D1F6C6D7F0025C90F /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D91EDF4E1F6C6D7F0025C90F /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandingCollectionViewController.swift; sourceTree = "<group>"; };
+		F6D7EB7A77FAE97D0A6A30D2 /* Pods_Navy_DolphinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Navy_DolphinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F3C8EE1D2FB140494B708D /* Pods-Navy Dolphin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Navy Dolphin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Navy Dolphin/Pods-Navy Dolphin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE992CA8C90A68EAF98315A /* Pods_Navy_Dolphin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1498DDE42E72936697A319AB /* Pods_Navy_DolphinTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA76A8742561D3EFAA762F64 /* Pods_Navy_DolphinUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22FCED466BB9998580C9CCF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8F3C8EE1D2FB140494B708D /* Pods-Navy Dolphin.debug.xcconfig */,
+				BBF1B10E56B6976CC18B0BF4 /* Pods-Navy Dolphin.release.xcconfig */,
+				D2A254031938978AD9C7DCE8 /* Pods-Navy DolphinTests.debug.xcconfig */,
+				758502958A53AB2F16359E8E /* Pods-Navy DolphinTests.release.xcconfig */,
+				9A153869A3AE6DDBE411C170 /* Pods-Navy DolphinUITests.debug.xcconfig */,
+				35563B05F65786BB8933504C /* Pods-Navy DolphinUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		341565CA2DEE0233FFA19C96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07F6DB1A689F1AB7519BEFA7 /* Pods_Navy_Dolphin.framework */,
+				F6D7EB7A77FAE97D0A6A30D2 /* Pods_Navy_DolphinTests.framework */,
+				32937494B694574150F6415B /* Pods_Navy_DolphinUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D91EDF111F6C6C390025C90F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				D91EDF331F6C6C390025C90F /* Navy DolphinTests */,
 				D91EDF3E1F6C6C390025C90F /* Navy DolphinUITests */,
 				D91EDF1B1F6C6C390025C90F /* Products */,
+				22FCED466BB9998580C9CCF0 /* Pods */,
+				341565CA2DEE0233FFA19C96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +152,9 @@
 				D91EDF261F6C6C390025C90F /* Assets.xcassets */,
 				D91EDF281F6C6C390025C90F /* LaunchScreen.storyboard */,
 				D91EDF2B1F6C6C390025C90F /* Info.plist */,
+				D91EDF4D1F6C6D7F0025C90F /* CollectionViewCell.swift */,
+				D91EDF4E1F6C6D7F0025C90F /* CollectionViewCell.xib */,
+				D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */,
 			);
 			path = "Navy Dolphin";
 			sourceTree = "<group>";
@@ -135,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D91EDF441F6C6C390025C90F /* Build configuration list for PBXNativeTarget "Navy Dolphin" */;
 			buildPhases = (
+				9A929C54038A5D336022E4B6 /* [CP] Check Pods Manifest.lock */,
 				D91EDF161F6C6C390025C90F /* Sources */,
 				D91EDF171F6C6C390025C90F /* Frameworks */,
 				D91EDF181F6C6C390025C90F /* Resources */,
+				B6D18303AA9B6DDF90BEF35B /* [CP] Embed Pods Frameworks */,
+				A94C2857BAA7381275A69427 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D91EDF471F6C6C390025C90F /* Build configuration list for PBXNativeTarget "Navy DolphinTests" */;
 			buildPhases = (
+				F3437347F29B3910E291AC0E /* [CP] Check Pods Manifest.lock */,
 				D91EDF2C1F6C6C390025C90F /* Sources */,
 				D91EDF2D1F6C6C390025C90F /* Frameworks */,
 				D91EDF2E1F6C6C390025C90F /* Resources */,
+				A667BEC046A76A84C752FD69 /* [CP] Embed Pods Frameworks */,
+				BD75BC943A1C63B2642588BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D91EDF4A1F6C6C390025C90F /* Build configuration list for PBXNativeTarget "Navy DolphinUITests" */;
 			buildPhases = (
+				B17E8EFADF48FC7F5208A186 /* [CP] Check Pods Manifest.lock */,
 				D91EDF371F6C6C390025C90F /* Sources */,
 				D91EDF381F6C6C390025C90F /* Frameworks */,
 				D91EDF391F6C6C390025C90F /* Resources */,
+				9B9E1BE57A8FB3F0758846E2 /* [CP] Embed Pods Frameworks */,
+				E58AFE8DADF34744522AC37E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +298,7 @@
 			files = (
 				D91EDF2A1F6C6C390025C90F /* LaunchScreen.storyboard in Resources */,
 				D91EDF271F6C6C390025C90F /* Assets.xcassets in Resources */,
+				D91EDF501F6C6D7F0025C90F /* CollectionViewCell.xib in Resources */,
 				D91EDF251F6C6C390025C90F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,13 +319,165 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9A929C54038A5D336022E4B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Navy Dolphin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B9E1BE57A8FB3F0758846E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Navy DolphinUITests/Pods-Navy DolphinUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A667BEC046A76A84C752FD69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Navy DolphinTests/Pods-Navy DolphinTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A94C2857BAA7381275A69427 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Navy Dolphin/Pods-Navy Dolphin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B17E8EFADF48FC7F5208A186 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Navy DolphinUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6D18303AA9B6DDF90BEF35B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Navy Dolphin/Pods-Navy Dolphin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Navy Dolphin/Pods-Navy Dolphin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD75BC943A1C63B2642588BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Navy DolphinTests/Pods-Navy DolphinTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E58AFE8DADF34744522AC37E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Navy DolphinUITests/Pods-Navy DolphinUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3437347F29B3910E291AC0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Navy DolphinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D91EDF161F6C6C390025C90F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D91EDF221F6C6C390025C90F /* SecondViewController.swift in Sources */,
+				D9F381B11F6C85F700E644E2 /* ExpandingCollectionViewController.swift in Sources */,
 				D91EDF1E1F6C6C390025C90F /* AppDelegate.swift in Sources */,
+				D91EDF4F1F6C6D7F0025C90F /* CollectionViewCell.swift in Sources */,
 				D91EDF201F6C6C390025C90F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +630,7 @@
 		};
 		D91EDF451F6C6C390025C90F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F3C8EE1D2FB140494B708D /* Pods-Navy Dolphin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6ZTX9P34UK;
@@ -432,6 +644,7 @@
 		};
 		D91EDF461F6C6C390025C90F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBF1B10E56B6976CC18B0BF4 /* Pods-Navy Dolphin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6ZTX9P34UK;
@@ -445,6 +658,7 @@
 		};
 		D91EDF481F6C6C390025C90F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2A254031938978AD9C7DCE8 /* Pods-Navy DolphinTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +674,7 @@
 		};
 		D91EDF491F6C6C390025C90F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 758502958A53AB2F16359E8E /* Pods-Navy DolphinTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +690,7 @@
 		};
 		D91EDF4B1F6C6C390025C90F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A153869A3AE6DDBE411C170 /* Pods-Navy DolphinUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6ZTX9P34UK;
@@ -489,6 +705,7 @@
 		};
 		D91EDF4C1F6C6C390025C90F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35563B05F65786BB8933504C /* Pods-Navy DolphinUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6ZTX9P34UK;
@@ -520,6 +737,7 @@
 				D91EDF461F6C6C390025C90F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D91EDF471F6C6C390025C90F /* Build configuration list for PBXNativeTarget "Navy DolphinTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +746,7 @@
 				D91EDF491F6C6C390025C90F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D91EDF4A1F6C6C390025C90F /* Build configuration list for PBXNativeTarget "Navy DolphinUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +755,7 @@
 				D91EDF4C1F6C6C390025C90F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
