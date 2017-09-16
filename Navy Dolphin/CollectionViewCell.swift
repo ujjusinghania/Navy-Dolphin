@@ -11,6 +11,8 @@ import expanding_collection
 
 class CollectionViewCell: BasePageCollectionCell {
 
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -25,12 +25,19 @@ class ExpandingCollectionViewController: ExpandingViewController {
 extension ExpandingCollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return TaskConstants.tasks.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell  {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath)
         // configure cell
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        super.collectionView(collectionView, willDisplay: cell, forItemAt: indexPath)
+        guard let cell = cell as? CollectionViewCell else { return }
+        
+        cell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row])
     }
 }
