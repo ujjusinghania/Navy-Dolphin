@@ -20,6 +20,16 @@ class ExpandingCollectionViewController: ExpandingViewController {
         collectionView?.register(nib, forCellWithReuseIdentifier: String(describing: CollectionViewCell.self))
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Button pressed.")
+        guard let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell, currentIndex == indexPath.row else { return }
+        if cell.isOpened == false {
+            print("animate pressed.")
+            cell.cellIsOpen(true, animated: true)
+        } else {
+            cell.cellIsOpen(false, animated: true)
+        }
+    }
 }
 
 extension ExpandingCollectionViewController {
@@ -30,7 +40,6 @@ extension ExpandingCollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell  {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath)
-        // configure cell
         return cell
     }
     
@@ -39,5 +48,6 @@ extension ExpandingCollectionViewController {
         guard let cell = cell as? CollectionViewCell else { return }
         
         cell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row])
+        cell.isOpened = false
     }
 }

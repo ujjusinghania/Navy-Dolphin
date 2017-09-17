@@ -20,7 +20,7 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.06212071332742946" green="0.061802145566775976" blue="0.062439281088082943" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -63,7 +63,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Settings Button" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="" systemItem="more" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +91,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Settings Button" width="48" height="48"/>
         <image name="first" width="30" height="30"/>
     </resources>
 </document>
