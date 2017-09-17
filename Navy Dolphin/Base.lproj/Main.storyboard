@@ -20,7 +20,18 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.06212071332742946" green="0.061802145566775976" blue="0.062439281088082943" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Image" translatesAutoresizingMaskIntoConstraints="NO" id="4Rb-tI-18h">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99489795918367352" green="0.98979591836734693" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="4Rb-tI-18h" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="7z9-yb-oyb"/>
+                            <constraint firstItem="4Rb-tI-18h" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="N0D-ej-mqN"/>
+                            <constraint firstItem="4Rb-tI-18h" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="iXz-Lk-iJO"/>
+                            <constraint firstItem="4Rb-tI-18h" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="q0U-R4-p8N"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -91,6 +102,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Background Image" width="540" height="960"/>
         <image name="first" width="30" height="30"/>
     </resources>
 </document>

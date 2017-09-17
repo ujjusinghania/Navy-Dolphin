@@ -18,32 +18,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="277" height="414"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMQ-Kg-6AL">
-                        <rect key="frame" x="0.0" y="0.0" width="277" height="414"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="002" translatesAutoresizingMaskIntoConstraints="NO" id="MEk-Jz-lM5">
-                                <rect key="frame" x="0.0" y="0.0" width="277" height="414"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apX-Vq-V29">
-                                <rect key="frame" x="26" y="373" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="MEk-Jz-lM5" firstAttribute="centerY" secondItem="uMQ-Kg-6AL" secondAttribute="centerY" id="Ch6-LL-AR2"/>
-                            <constraint firstItem="MEk-Jz-lM5" firstAttribute="width" secondItem="uMQ-Kg-6AL" secondAttribute="width" id="D2W-Oo-myo"/>
-                            <constraint firstItem="MEk-Jz-lM5" firstAttribute="height" secondItem="uMQ-Kg-6AL" secondAttribute="height" id="M4M-AC-0Ax"/>
-                            <constraint firstItem="MEk-Jz-lM5" firstAttribute="centerX" secondItem="uMQ-Kg-6AL" secondAttribute="centerX" id="VXD-oo-fvX"/>
-                            <constraint firstAttribute="width" constant="277" id="Vx2-rC-9ww"/>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="414" id="bpv-Hx-y1l"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="277" id="fAt-9f-RO3"/>
-                            <constraint firstAttribute="height" constant="414" id="o6I-GG-e5c"/>
-                        </constraints>
-                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ma-52-kBo">
                         <rect key="frame" x="0.0" y="0.0" width="277" height="414"/>
                         <subviews>
@@ -71,6 +45,32 @@
                             <constraint firstAttribute="height" constant="414" id="Zz9-9T-FEV"/>
                             <constraint firstAttribute="width" constant="277" id="eeM-OP-iff"/>
                             <constraint firstAttribute="bottom" secondItem="DKf-j8-Kaq" secondAttribute="bottom" constant="18" id="wwX-ry-n1n"/>
+                        </constraints>
+                    </view>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMQ-Kg-6AL">
+                        <rect key="frame" x="0.0" y="0.0" width="277" height="414"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="002" translatesAutoresizingMaskIntoConstraints="NO" id="MEk-Jz-lM5">
+                                <rect key="frame" x="0.0" y="0.0" width="277" height="414"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apX-Vq-V29">
+                                <rect key="frame" x="26" y="373" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MEk-Jz-lM5" firstAttribute="centerY" secondItem="uMQ-Kg-6AL" secondAttribute="centerY" id="Ch6-LL-AR2"/>
+                            <constraint firstItem="MEk-Jz-lM5" firstAttribute="width" secondItem="uMQ-Kg-6AL" secondAttribute="width" id="D2W-Oo-myo"/>
+                            <constraint firstItem="MEk-Jz-lM5" firstAttribute="height" secondItem="uMQ-Kg-6AL" secondAttribute="height" id="M4M-AC-0Ax"/>
+                            <constraint firstItem="MEk-Jz-lM5" firstAttribute="centerX" secondItem="uMQ-Kg-6AL" secondAttribute="centerX" id="VXD-oo-fvX"/>
+                            <constraint firstAttribute="width" constant="277" id="Vx2-rC-9ww"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="414" id="bpv-Hx-y1l"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="277" id="fAt-9f-RO3"/>
+                            <constraint firstAttribute="height" constant="414" id="o6I-GG-e5c"/>
                         </constraints>
                     </view>
                 </subviews>
