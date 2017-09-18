@@ -13,7 +13,7 @@ import expanding_collection
 class ExpandingCollectionViewController: ExpandingViewController {
     
     override func viewDidLoad() {
-        itemSize = CGSize(width: 277, height: 414)
+        itemSize = CGSize(width: 240, height: 300)
         super.viewDidLoad()
         // register cell
         let nib = UINib(nibName: String(describing: CollectionViewCell.self), bundle: nil)
@@ -35,11 +35,10 @@ extension ExpandingCollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         super.collectionView(collectionView, willDisplay: cell, forItemAt: indexPath)
         guard let cell = cell as? CollectionViewCell else { return }
-        
         cell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row])
         cell.isOpened = false
+        
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell, currentIndex == indexPath.row else { return }
@@ -49,4 +48,6 @@ extension ExpandingCollectionViewController {
             cell.cellIsOpen(false, animated: true)
         }
     }
+    
 }
+
