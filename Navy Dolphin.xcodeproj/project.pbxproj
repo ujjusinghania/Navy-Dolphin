@@ -10,7 +10,7 @@
 		1498DDE42E72936697A319AB /* Pods_Navy_DolphinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D7EB7A77FAE97D0A6A30D2 /* Pods_Navy_DolphinTests.framework */; };
 		BA76A8742561D3EFAA762F64 /* Pods_Navy_DolphinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32937494B694574150F6415B /* Pods_Navy_DolphinUITests.framework */; };
 		D91EDF1E1F6C6C390025C90F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF1D1F6C6C390025C90F /* AppDelegate.swift */; };
-		D91EDF221F6C6C390025C90F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF211F6C6C390025C90F /* AboutViewController.swift */; };
+		D91EDF221F6C6C390025C90F /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF211F6C6C390025C90F /* AboutTableViewController.swift */; };
 		D91EDF251F6C6C390025C90F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91EDF231F6C6C390025C90F /* Main.storyboard */; };
 		D91EDF271F6C6C390025C90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91EDF261F6C6C390025C90F /* Assets.xcassets */; };
 		D91EDF2A1F6C6C390025C90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91EDF281F6C6C390025C90F /* LaunchScreen.storyboard */; };
@@ -18,6 +18,8 @@
 		D91EDF401F6C6C390025C90F /* Navy_DolphinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF3F1F6C6C390025C90F /* Navy_DolphinUITests.swift */; };
 		D91EDF4F1F6C6D7F0025C90F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF4D1F6C6D7F0025C90F /* CollectionViewCell.swift */; };
 		D91EDF501F6C6D7F0025C90F /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91EDF4E1F6C6D7F0025C90F /* CollectionViewCell.xib */; };
+		D94C8EA01F70D004000B5F7B /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94C8E9E1F70D004000B5F7B /* AboutTableViewCell.swift */; };
+		D94C8EA11F70D004000B5F7B /* AboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D94C8E9F1F70D004000B5F7B /* AboutTableViewCell.xib */; };
 		D9CE81F61F6C8A7300FFDF30 /* TaskConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE81F51F6C8A7300FFDF30 /* TaskConstants.swift */; };
 		D9F381B11F6C85F700E644E2 /* ExpandingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */; };
 		ECE992CA8C90A68EAF98315A /* Pods_Navy_Dolphin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F6DB1A689F1AB7519BEFA7 /* Pods_Navy_Dolphin.framework */; };
@@ -50,7 +52,7 @@
 		D2A254031938978AD9C7DCE8 /* Pods-Navy DolphinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Navy DolphinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Navy DolphinTests/Pods-Navy DolphinTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D91EDF1A1F6C6C390025C90F /* Navy Dolphin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navy Dolphin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91EDF1D1F6C6C390025C90F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D91EDF211F6C6C390025C90F /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D91EDF211F6C6C390025C90F /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		D91EDF241F6C6C390025C90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D91EDF261F6C6C390025C90F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D91EDF291F6C6C390025C90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,8 @@
 		D91EDF411F6C6C390025C90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91EDF4D1F6C6D7F0025C90F /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		D91EDF4E1F6C6D7F0025C90F /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		D94C8E9E1F70D004000B5F7B /* AboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
+		D94C8E9F1F70D004000B5F7B /* AboutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutTableViewCell.xib; sourceTree = "<group>"; };
 		D9CE81F51F6C8A7300FFDF30 /* TaskConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskConstants.swift; sourceTree = "<group>"; };
 		D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandingCollectionViewController.swift; sourceTree = "<group>"; };
 		F6D7EB7A77FAE97D0A6A30D2 /* Pods_Navy_DolphinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Navy_DolphinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				D91EDF1D1F6C6C390025C90F /* AppDelegate.swift */,
-				D91EDF211F6C6C390025C90F /* AboutViewController.swift */,
+				D91EDF211F6C6C390025C90F /* AboutTableViewController.swift */,
 				D91EDF231F6C6C390025C90F /* Main.storyboard */,
 				D91EDF261F6C6C390025C90F /* Assets.xcassets */,
 				D91EDF281F6C6C390025C90F /* LaunchScreen.storyboard */,
@@ -155,6 +159,8 @@
 				D91EDF4E1F6C6D7F0025C90F /* CollectionViewCell.xib */,
 				D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */,
 				D9CE81F51F6C8A7300FFDF30 /* TaskConstants.swift */,
+				D94C8E9E1F70D004000B5F7B /* AboutTableViewCell.swift */,
+				D94C8E9F1F70D004000B5F7B /* AboutTableViewCell.xib */,
 			);
 			path = "Navy Dolphin";
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 			files = (
 				D91EDF2A1F6C6C390025C90F /* LaunchScreen.storyboard in Resources */,
 				D91EDF271F6C6C390025C90F /* Assets.xcassets in Resources */,
+				D94C8EA11F70D004000B5F7B /* AboutTableViewCell.xib in Resources */,
 				D91EDF501F6C6D7F0025C90F /* CollectionViewCell.xib in Resources */,
 				D91EDF251F6C6C390025C90F /* Main.storyboard in Resources */,
 			);
@@ -474,9 +481,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D91EDF221F6C6C390025C90F /* AboutViewController.swift in Sources */,
+				D91EDF221F6C6C390025C90F /* AboutTableViewController.swift in Sources */,
 				D9F381B11F6C85F700E644E2 /* ExpandingCollectionViewController.swift in Sources */,
 				D91EDF1E1F6C6C390025C90F /* AppDelegate.swift in Sources */,
+				D94C8EA01F70D004000B5F7B /* AboutTableViewCell.swift in Sources */,
 				D91EDF4F1F6C6D7F0025C90F /* CollectionViewCell.swift in Sources */,
 				D9CE81F61F6C8A7300FFDF30 /* TaskConstants.swift in Sources */,
 			);
