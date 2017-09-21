@@ -25,8 +25,8 @@ class AboutTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cardStyleCell")
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cardStyleCell", for: indexPath)
+        return cell
     }
     
 }

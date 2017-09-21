@@ -35,7 +35,7 @@ extension ExpandingCollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         super.collectionView(collectionView, willDisplay: cell, forItemAt: indexPath)
         guard let cell = cell as? CollectionViewCell else { return }
-        cell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row])
+        cell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row][0])
         cell.isOpened = false
         
     }

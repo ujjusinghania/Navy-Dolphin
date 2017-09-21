@@ -150,15 +150,15 @@
 			isa = PBXGroup;
 			children = (
 				D91EDF1D1F6C6C390025C90F /* AppDelegate.swift */,
-				D91EDF211F6C6C390025C90F /* AboutTableViewController.swift */,
+				D9CE81F51F6C8A7300FFDF30 /* TaskConstants.swift */,
 				D91EDF231F6C6C390025C90F /* Main.storyboard */,
 				D91EDF261F6C6C390025C90F /* Assets.xcassets */,
 				D91EDF281F6C6C390025C90F /* LaunchScreen.storyboard */,
 				D91EDF2B1F6C6C390025C90F /* Info.plist */,
+				D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */,
 				D91EDF4D1F6C6D7F0025C90F /* CollectionViewCell.swift */,
 				D91EDF4E1F6C6D7F0025C90F /* CollectionViewCell.xib */,
-				D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */,
-				D9CE81F51F6C8A7300FFDF30 /* TaskConstants.swift */,
+				D91EDF211F6C6C390025C90F /* AboutTableViewController.swift */,
 				D94C8E9E1F70D004000B5F7B /* AboutTableViewCell.swift */,
 				D94C8E9F1F70D004000B5F7B /* AboutTableViewCell.xib */,
 			);

@@ -10,6 +10,10 @@ import Foundation
 
 struct TaskConstants {
     
-    static var tasks: [String] = ["001", "002", "003"]
+    static var tasks: [[String]] = [
+        ["001"],
+        ["002"],
+        ["003"]
+    ]
     
 }
