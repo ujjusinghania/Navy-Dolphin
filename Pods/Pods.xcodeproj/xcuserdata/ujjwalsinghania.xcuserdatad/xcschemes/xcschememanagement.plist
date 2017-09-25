@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SAConfettiView-SAConfettiView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SAConfettiView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>expanding-collection.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -26,27 +36,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>4C67514EA7D98658F641516ED8328206</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7FB54F500BE52BBCF90923CC6626A038</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B3DAED2DC42C07134C7EBAACAD321E3C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F8245C00F624670450EC0618761C8DDE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,10 +20,22 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16m-g9-8EO">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="300"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axe-Xi-YbR">
+                                <rect key="frame" x="24" y="204" width="192" height="72"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum fringilla dapibus. Suspendisse potenti. Vivamus tincidunt massa at nulla lacinia, a tristique ipsum malesuada. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="axe-Xi-YbR" firstAttribute="leading" secondItem="16m-g9-8EO" secondAttribute="leading" constant="24" id="3Pe-ae-O2z"/>
+                            <constraint firstAttribute="bottom" secondItem="axe-Xi-YbR" secondAttribute="bottom" constant="24" id="Cxp-kG-qVv"/>
                             <constraint firstAttribute="height" constant="300" id="Pcv-DP-uQv"/>
                             <constraint firstAttribute="width" constant="240" id="pO9-p5-WGt"/>
+                            <constraint firstAttribute="trailing" secondItem="axe-Xi-YbR" secondAttribute="trailing" constant="24" id="ynZ-Ex-4uw"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBr-TK-iF9">
@@ -33,9 +45,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twI-oh-Y6P">
-                                <rect key="frame" x="20" y="259" width="82" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Completed?" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBP-1b-gcq">
+                                <rect key="frame" x="20" y="259" width="124" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task 1" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twI-oh-Y6P">
+                                <rect key="frame" x="162" y="16" width="62" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -43,8 +61,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="twI-oh-Y6P" firstAttribute="top" secondItem="YBr-TK-iF9" secondAttribute="top" constant="16" id="I6U-5L-W8J"/>
                             <constraint firstAttribute="height" constant="300" id="oUu-cn-atH"/>
                             <constraint firstAttribute="width" constant="240" id="sv8-nb-CX6"/>
+                            <constraint firstAttribute="trailing" secondItem="twI-oh-Y6P" secondAttribute="trailing" constant="16" id="u6Q-de-Wop"/>
                         </constraints>
                     </view>
                 </subviews>

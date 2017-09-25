@@ -9,8 +9,11 @@
 import Foundation
 import UIKit
 import expanding_collection
+import SAConfettiView
 
 class ExpandingCollectionViewController: ExpandingViewController {
+    
+    @IBOutlet weak var confettiView: SAConfettiView!
     
     override func viewDidLoad() {
         itemSize = CGSize(width: 240, height: 300)
@@ -18,9 +21,12 @@ class ExpandingCollectionViewController: ExpandingViewController {
         // register cell
         let nib = UINib(nibName: String(describing: CollectionViewCell.self), bundle: nil)
         collectionView?.register(nib, forCellWithReuseIdentifier: String(describing: CollectionViewCell.self))
+        startConfettiFall()
     }
 }
 
+
+// Collection View Methods
 extension ExpandingCollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -28,6 +34,9 @@ extension ExpandingCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell  {
+        if (confettiView.isActive()) {
+            confettiView.stopConfetti()
+        }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath)
         return cell
     }
@@ -41,6 +50,7 @@ extension ExpandingCollectionViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        startConfettiFall()
         guard let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell, currentIndex == indexPath.row else { return }
         if cell.isOpened == false {
             cell.cellIsOpen(true, animated: true)
@@ -48,6 +58,14 @@ extension ExpandingCollectionViewController {
             cell.cellIsOpen(false, animated: true)
         }
     }
+}
+
+// Confetti View Methods
+extension ExpandingCollectionViewController {
     
+    func startConfettiFall() {
+        confettiView.intensity = 1
+        confettiView.startConfetti()
+    }
 }
 

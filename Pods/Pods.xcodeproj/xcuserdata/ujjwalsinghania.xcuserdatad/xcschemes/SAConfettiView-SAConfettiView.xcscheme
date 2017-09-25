@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8092A7DCF808DFE230FF0F45B4890523"
-               BuildableName = "Pods_Navy_Dolphin.framework"
-               BlueprintName = "Pods-Navy Dolphin"
+               BlueprintIdentifier = "EB70FB57B4D7D3234622E4D7DB9932B5"
+               BuildableName = "SAConfettiView.bundle"
+               BlueprintName = "SAConfettiView-SAConfettiView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8092A7DCF808DFE230FF0F45B4890523"
-            BuildableName = "Pods_Navy_Dolphin.framework"
-            BlueprintName = "Pods-Navy Dolphin"
+            BlueprintIdentifier = "EB70FB57B4D7D3234622E4D7DB9932B5"
+            BuildableName = "SAConfettiView.bundle"
+            BlueprintName = "SAConfettiView-SAConfettiView"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
