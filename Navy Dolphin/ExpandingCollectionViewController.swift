@@ -34,9 +34,6 @@ extension ExpandingCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell  {
-        if (confettiView.isActive()) {
-            confettiView.stopConfetti()
-        }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath)
         return cell
     }
@@ -44,9 +41,12 @@ extension ExpandingCollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         super.collectionView(collectionView, willDisplay: cell, forItemAt: indexPath)
         guard let cell = cell as? CollectionViewCell else { return }
+        if (confettiView.isActive()) {
+            confettiView.stopConfetti()
+        }
         cell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row][0])
-        cell.isOpened = false
-        
+        cell.cellIsOpen(false, animated: true)
+        cell.taskLabel?.text = "Task \(indexPath.row + 1)"
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

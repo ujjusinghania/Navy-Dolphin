@@ -45,26 +45,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Completed?" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBP-1b-gcq">
-                                <rect key="frame" x="20" y="259" width="124" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task 1" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twI-oh-Y6P">
-                                <rect key="frame" x="162" y="16" width="62" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twI-oh-Y6P">
+                                <rect key="frame" x="16" y="260" width="47" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTE-do-ihl" customClass="A">
+                                <rect key="frame" x="172" y="253" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.0087425475940108299" green="0.54872912168502808" blue="0.99197977781295776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="twI-oh-Y6P" firstAttribute="top" secondItem="YBr-TK-iF9" secondAttribute="top" constant="16" id="I6U-5L-W8J"/>
+                            <constraint firstItem="twI-oh-Y6P" firstAttribute="leading" secondItem="YBr-TK-iF9" secondAttribute="leading" constant="16" id="9vN-XU-Car"/>
+                            <constraint firstAttribute="bottom" secondItem="twI-oh-Y6P" secondAttribute="bottom" constant="16" id="gXv-si-HNC"/>
                             <constraint firstAttribute="height" constant="300" id="oUu-cn-atH"/>
                             <constraint firstAttribute="width" constant="240" id="sv8-nb-CX6"/>
-                            <constraint firstAttribute="trailing" secondItem="twI-oh-Y6P" secondAttribute="trailing" constant="16" id="u6Q-de-Wop"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -82,6 +81,7 @@
                 <outlet property="backgroundImageView" destination="Jkg-Ol-7ps" id="n8h-vC-bS8"/>
                 <outlet property="frontConstraintY" destination="f54-MU-PJ1" id="hVe-0z-QxJ"/>
                 <outlet property="frontContainerView" destination="YBr-TK-iF9" id="PU2-zG-Z6k"/>
+                <outlet property="taskLabel" destination="twI-oh-Y6P" id="FQb-Jh-dgV"/>
             </connections>
             <point key="canvasLocation" x="129" y="179"/>
         </collectionViewCell>

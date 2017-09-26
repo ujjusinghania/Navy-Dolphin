@@ -8,10 +8,12 @@
 
 import UIKit
 import expanding_collection
+import AIFlatSwitch
 
 class CollectionViewCell: BasePageCollectionCell {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var taskLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
