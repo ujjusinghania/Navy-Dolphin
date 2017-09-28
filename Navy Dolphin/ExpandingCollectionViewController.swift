@@ -14,7 +14,7 @@ import SAConfettiView
 class ExpandingCollectionViewController: ExpandingViewController {
     
     @IBOutlet weak var confettiView: SAConfettiView!
-    @IBOutlet weak var pageNumberLabel: UILabel!
+    var checkboxTrackerArray: [Bool]?
     
     override func viewDidLoad() {
         itemSize = CGSize(width: 240, height: 300)
@@ -22,7 +22,6 @@ class ExpandingCollectionViewController: ExpandingViewController {
         // register cell
         let nib = UINib(nibName: String(describing: CollectionViewCell.self), bundle: nil)
         collectionView?.register(nib, forCellWithReuseIdentifier: String(describing: CollectionViewCell.self))
-        startConfettiFall()
     }
 }
 
@@ -35,11 +34,16 @@ extension ExpandingCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell  {
+        checkboxTrackerArray = UserDefaults.standard.array(forKey: "checkboxTrackerArray") as! [Bool]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath) as! CollectionViewCell
         cell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row][0])
         cell.cellIsOpen(false, animated: true)
         cell.taskLabel?.text = "Task \(indexPath.row + 1)"
-//        pageNumberLabel.text = "\(indexPath.row + 1) / \(TaskConstants.tasks.count)"
+        cell.integerLabel = indexPath.row
+        cell.completionCheckBox?.on = checkboxTrackerArray![indexPath.row]
+        if (checkboxTrackerArray![indexPath.row] == true) {
+            cell.completionCheckBox?.minimumTouchSize = CGSize(width: 0, height: 0)
+        }
         return cell
     }
     
@@ -48,10 +52,9 @@ extension ExpandingCollectionViewController {
         if (confettiView.isActive()) {
             confettiView.stopConfetti()
         }
-        }
+    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        startConfettiFall()
         guard let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell, currentIndex == indexPath.row else { return }
         if cell.isOpened == false {
             cell.cellIsOpen(true, animated: true)
@@ -65,8 +68,9 @@ extension ExpandingCollectionViewController {
     
     func startConfettiFall() {
         confettiView.intensity = 1
-        confettiView.type = .Star 
+        confettiView.type = .Triangle
         confettiView.startConfetti()
     }
 }
+
 

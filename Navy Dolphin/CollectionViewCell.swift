@@ -8,15 +8,26 @@
 
 import UIKit
 import expanding_collection
+import BEMCheckBox
 
 class CollectionViewCell: BasePageCollectionCell {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var taskLabel: UILabel!
+    @IBOutlet weak var completionCheckBox: BEMCheckBox!
+    
+    var integerLabel: Int?
+    var checkboxTrackerArray: [Bool] = UserDefaults.standard.array(forKey: "checkboxTrackerArray") as! [Bool]
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    @IBAction func checkBoxActivated(_ sender: Any) {
+        checkboxTrackerArray[integerLabel!] = true
+        completionCheckBox.minimumTouchSize = CGSize(width: 0, height: 0)
+        UserDefaults.standard.removeObject(forKey: "checkboxTrackerArray")
+        UserDefaults.standard.set(checkboxTrackerArray, forKey: "checkboxTrackerArray")
+    }
 }

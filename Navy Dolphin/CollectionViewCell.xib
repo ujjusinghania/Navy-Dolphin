@@ -71,7 +71,7 @@
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="minimumTouchSize">
-                                        <size key="value" width="0.0" height="0.0"/>
+                                        <size key="value" width="24" height="24"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
                                         <real key="value" value="2"/>
@@ -84,6 +84,9 @@
                                         <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="checkBoxActivated:" destination="gTV-IL-0wX" eventType="valueChanged" id="9KN-3v-AAz"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -109,6 +112,7 @@
                 <outlet property="backConstraintY" destination="Ufs-2K-ivu" id="mky-le-5PA"/>
                 <outlet property="backContainerView" destination="16m-g9-8EO" id="G55-Rp-1g9"/>
                 <outlet property="backgroundImageView" destination="Jkg-Ol-7ps" id="n8h-vC-bS8"/>
+                <outlet property="completionCheckBox" destination="lqZ-s7-WZi" id="qz2-nv-Tay"/>
                 <outlet property="frontConstraintY" destination="f54-MU-PJ1" id="hVe-0z-QxJ"/>
                 <outlet property="frontContainerView" destination="YBr-TK-iF9" id="PU2-zG-Z6k"/>
                 <outlet property="taskLabel" destination="twI-oh-Y6P" id="FQb-Jh-dgV"/>

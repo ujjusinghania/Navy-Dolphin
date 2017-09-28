@@ -67,7 +67,7 @@
                         <barButtonItem key="rightBarButtonItem" image="Help Button" id="Q35-B0-H43">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="Uaz-Lb-NXA" kind="show" id="rHf-bH-0dd"/>
+                                <segue destination="dMY-9S-xVK" kind="show" id="FPi-P3-7vW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -81,57 +81,34 @@
             </objects>
             <point key="canvasLocation" x="36" y="-7"/>
         </scene>
-        <!--About Table View Controller-->
-        <scene sceneID="OpU-EA-T9b">
+        <!--View Controller-->
+        <scene sceneID="pfD-e5-0NM">
             <objects>
-                <tableViewController id="Uaz-Lb-NXA" customClass="AboutTableViewController" customModule="Navy_Dolphin" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="147" sectionHeaderHeight="28" sectionFooterHeight="28" id="M1G-fW-twk">
+                <viewController id="dMY-9S-xVK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QPh-0G-vzs"/>
+                        <viewControllerLayoutGuide type="bottom" id="fUR-Rg-opl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZRx-oI-wFh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardStyleCell" rowHeight="147" id="Ewk-YF-9si">
-                                <rect key="frame" x="0.0" y="28" width="320" height="147"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ewk-YF-9si" id="Deb-2I-d4v">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="146.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dv-sI-zbw">
-                                            <rect key="frame" x="16" y="16" width="288" height="114.5"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mM-aE-1fM">
-                                                    <rect key="frame" x="8" y="8" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.0087425475940108299" green="0.54872912168502808" blue="0.99197977781295776" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="7dv-sI-zbw" secondAttribute="bottom" constant="16" id="b1M-LV-jca"/>
-                                        <constraint firstItem="7dv-sI-zbw" firstAttribute="leading" secondItem="Deb-2I-d4v" secondAttribute="leading" constant="16" id="jSE-nP-jzt"/>
-                                        <constraint firstItem="7dv-sI-zbw" firstAttribute="top" secondItem="Deb-2I-d4v" secondAttribute="top" constant="16" id="m4f-GP-7s9"/>
-                                        <constraint firstAttribute="trailing" secondItem="7dv-sI-zbw" secondAttribute="trailing" constant="16" id="nVM-lD-PXU"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0087425475940108299" green="0.54872912168502808" blue="0.99197977781295776" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="Uaz-Lb-NXA" id="Mkx-Pg-q7U"/>
-                            <outlet property="delegate" destination="Uaz-Lb-NXA" id="fZ0-6x-N9q"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HA1-uJ-BgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Image" translatesAutoresizingMaskIntoConstraints="NO" id="2Bg-GR-NdR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Bg-GR-NdR" firstAttribute="centerX" secondItem="ZRx-oI-wFh" secondAttribute="centerX" id="Qa2-xc-AgV"/>
+                            <constraint firstItem="2Bg-GR-NdR" firstAttribute="width" secondItem="ZRx-oI-wFh" secondAttribute="width" id="i8l-4M-wDa"/>
+                            <constraint firstItem="2Bg-GR-NdR" firstAttribute="height" secondItem="ZRx-oI-wFh" secondAttribute="height" id="qPh-T4-JcX"/>
+                            <constraint firstItem="2Bg-GR-NdR" firstAttribute="centerY" secondItem="ZRx-oI-wFh" secondAttribute="centerY" id="xOt-8U-Yfw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tSO-QQ-7rB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896.79999999999995" y="-6.746626686656672"/>
+            <point key="canvasLocation" x="821.25" y="-8.4507042253521121"/>
         </scene>
     </scenes>
     <resources>
