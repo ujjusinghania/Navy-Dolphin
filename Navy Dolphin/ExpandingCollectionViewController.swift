@@ -14,6 +14,7 @@ import SAConfettiView
 class ExpandingCollectionViewController: ExpandingViewController {
     
     @IBOutlet weak var confettiView: SAConfettiView!
+    @IBOutlet weak var pageNumberLabel: UILabel!
     
     override func viewDidLoad() {
         itemSize = CGSize(width: 240, height: 300)
@@ -34,20 +35,20 @@ extension ExpandingCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell  {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath) as! CollectionViewCell
+        cell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row][0])
+        cell.cellIsOpen(false, animated: true)
+        cell.taskLabel?.text = "Task \(indexPath.row + 1)"
+//        pageNumberLabel.text = "\(indexPath.row + 1) / \(TaskConstants.tasks.count)"
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         super.collectionView(collectionView, willDisplay: cell, forItemAt: indexPath)
-        guard let cell = cell as? CollectionViewCell else { return }
         if (confettiView.isActive()) {
             confettiView.stopConfetti()
         }
-        cell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row][0])
-        cell.cellIsOpen(false, animated: true)
-        cell.taskLabel?.text = "Task \(indexPath.row + 1)"
-    }
+        }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         startConfettiFall()
@@ -57,14 +58,14 @@ extension ExpandingCollectionViewController {
         } else {
             cell.cellIsOpen(false, animated: true)
         }
-    }
-}
+    }}
 
 // Confetti View Methods
 extension ExpandingCollectionViewController {
     
     func startConfettiFall() {
         confettiView.intensity = 1
+        confettiView.type = .Star 
         confettiView.startConfetti()
     }
 }

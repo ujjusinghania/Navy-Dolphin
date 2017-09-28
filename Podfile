@@ -8,7 +8,7 @@ target 'Navy Dolphin' do
   # Pods for Navy Dolphin
   pod 'expanding-collection', '~> 1.0.3'
   pod "SAConfettiView"
-  pod 'AIFlatSwitch', '~> 1.0.1'
+  pod 'BEMCheckBox'
 
   target 'Navy DolphinTests' do
     inherit! :search_paths

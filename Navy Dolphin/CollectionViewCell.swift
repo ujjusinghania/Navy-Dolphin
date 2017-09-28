@@ -8,7 +8,6 @@
 
 import UIKit
 import expanding_collection
-import AIFlatSwitch
 
 class CollectionViewCell: BasePageCollectionCell {
 
