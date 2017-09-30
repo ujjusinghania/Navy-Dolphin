@@ -14,7 +14,6 @@ import SAConfettiView
 class ExpandingCollectionViewController: ExpandingViewController {
     
     @IBOutlet weak var confettiView: SAConfettiView!
-    var checkboxTrackerArray: [Bool]?
     
     override func viewDidLoad() {
         itemSize = CGSize(width: 240, height: 300)
@@ -34,24 +33,19 @@ extension ExpandingCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell  {
-        checkboxTrackerArray = UserDefaults.standard.array(forKey: "checkboxTrackerArray") as! [Bool]
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath) as! CollectionViewCell
-        cell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row][0])
-        cell.cellIsOpen(false, animated: true)
-        cell.taskLabel?.text = "Task \(indexPath.row + 1)"
-        cell.integerLabel = indexPath.row
-        cell.completionCheckBox?.on = checkboxTrackerArray![indexPath.row]
-        if (checkboxTrackerArray![indexPath.row] == true) {
-            cell.completionCheckBox?.minimumTouchSize = CGSize(width: 0, height: 0)
-        }
-        return cell
+        return collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath)
     }
     
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        super.collectionView(collectionView, willDisplay: cell, forItemAt: indexPath)
-        if (confettiView.isActive()) {
-            confettiView.stopConfetti()
-        }
+        UserDefaults.standard.synchronize()
+        var checkboxTrackerArray: [Bool] = UserDefaults.standard.array(forKey: "checkboxTrackerArray") as! [Bool]
+        guard let expandingCell = cell as? CollectionViewCell else { return }
+        expandingCell.completionCheckBox?.setOn(checkboxTrackerArray[indexPath.row], animated: false)
+        expandingCell.cellIsOpen(false, animated: false)
+        expandingCell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row][0])
+        expandingCell.taskLabel?.text = "Task \(indexPath.row + 1)"
+        expandingCell.integerLabel = indexPath.row
+        expandingCell.completionCheckBox?.on = checkboxTrackerArray[indexPath.row]
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -61,7 +55,8 @@ extension ExpandingCollectionViewController {
         } else {
             cell.cellIsOpen(false, animated: true)
         }
-    }}
+    }
+}
 
 // Confetti View Methods
 extension ExpandingCollectionViewController {

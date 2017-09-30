@@ -90,21 +90,34 @@
                         <viewControllerLayoutGuide type="bottom" id="fUR-Rg-opl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZRx-oI-wFh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Image" translatesAutoresizingMaskIntoConstraints="NO" id="2Bg-GR-NdR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBG-Za-s4K">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="320" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="VBG-Za-s4K" firstAttribute="centerX" secondItem="ZRx-oI-wFh" secondAttribute="centerX" id="61a-vd-RWE"/>
                             <constraint firstItem="2Bg-GR-NdR" firstAttribute="centerX" secondItem="ZRx-oI-wFh" secondAttribute="centerX" id="Qa2-xc-AgV"/>
+                            <constraint firstItem="VBG-Za-s4K" firstAttribute="height" secondItem="ZRx-oI-wFh" secondAttribute="height" id="cMX-Aj-PBm"/>
+                            <constraint firstItem="VBG-Za-s4K" firstAttribute="centerY" secondItem="ZRx-oI-wFh" secondAttribute="centerY" id="f3i-6b-ghv"/>
                             <constraint firstItem="2Bg-GR-NdR" firstAttribute="width" secondItem="ZRx-oI-wFh" secondAttribute="width" id="i8l-4M-wDa"/>
                             <constraint firstItem="2Bg-GR-NdR" firstAttribute="height" secondItem="ZRx-oI-wFh" secondAttribute="height" id="qPh-T4-JcX"/>
+                            <constraint firstItem="VBG-Za-s4K" firstAttribute="width" secondItem="ZRx-oI-wFh" secondAttribute="width" id="uM5-ZU-FtP"/>
                             <constraint firstItem="2Bg-GR-NdR" firstAttribute="centerY" secondItem="ZRx-oI-wFh" secondAttribute="centerY" id="xOt-8U-Yfw"/>
                         </constraints>
                     </view>
+                    <size key="freeformSize" width="320" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSO-QQ-7rB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

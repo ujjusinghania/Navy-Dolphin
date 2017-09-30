@@ -17,7 +17,6 @@ class CollectionViewCell: BasePageCollectionCell {
     @IBOutlet weak var completionCheckBox: BEMCheckBox!
     
     var integerLabel: Int?
-    var checkboxTrackerArray: [Bool] = UserDefaults.standard.array(forKey: "checkboxTrackerArray") as! [Bool]
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,8 +24,10 @@ class CollectionViewCell: BasePageCollectionCell {
     }
 
     @IBAction func checkBoxActivated(_ sender: Any) {
-        checkboxTrackerArray[integerLabel!] = true
-        completionCheckBox.minimumTouchSize = CGSize(width: 0, height: 0)
+        UserDefaults.standard.synchronize()
+        var checkboxTrackerArray: [Bool] = UserDefaults.standard.array(forKey: "checkboxTrackerArray") as! [Bool]
+        checkboxTrackerArray[integerLabel!] = (sender as! BEMCheckBox).on
+//        completionCheckBox.minimumTouchSize = CGSize(width: 0, height: 0)
         UserDefaults.standard.removeObject(forKey: "checkboxTrackerArray")
         UserDefaults.standard.set(checkboxTrackerArray, forKey: "checkboxTrackerArray")
     }

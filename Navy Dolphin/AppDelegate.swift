@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        UserDefaults.standard.set(Array(repeating: false, count: TaskConstants.tasks.count), forKey: "checkboxTrackerArray")
+        if (!UserDefaults.standard.bool(forKey: "HasLaunchedOnce"))
+        {
+            UserDefaults.standard.set(Array(repeating: false, count: TaskConstants.tasks.count), forKey: "checkboxTrackerArray")
+            UserDefaults.standard.set(true, forKey: "HasLaunchedOnce")
+            UserDefaults.standard.synchronize()
+        }
         return true
     }
 
