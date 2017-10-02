@@ -115,6 +115,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aor-nQ-Dvn">
                                                 <rect key="frame" x="16" y="16" width="288" height="133"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <edgeInsets key="layoutMargins" top="12" left="12" bottom="12" right="12"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
                                                         <size key="value" width="0.0" height="5"/>
@@ -129,9 +130,40 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ld5-eM-3c7">
-                                                <rect key="frame" x="16" y="165" width="288" height="133"/>
+                                                <rect key="frame" x="16" y="165" width="288" height="150"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Call Button" translatesAutoresizingMaskIntoConstraints="NO" id="0Uq-Y5-TH3">
+                                                        <rect key="frame" x="24" y="52" width="32" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xM3-sM-LN3">
+                                                        <rect key="frame" x="24" y="99" width="32" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjv-0K-IWn">
+                                                        <rect key="frame" x="72" y="58" width="192" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="046-QO-wgc">
+                                                        <rect key="frame" x="72" y="105" width="192" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6X-Ya-anK">
+                                                        <rect key="frame" x="24" y="17" width="240" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                                                <edgeInsets key="layoutMargins" top="12" left="12" bottom="12" right="12"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
                                                         <size key="value" width="0.0" height="5"/>
@@ -160,7 +192,7 @@
                                             <constraint firstItem="Ld5-eM-3c7" firstAttribute="centerX" secondItem="aor-nQ-Dvn" secondAttribute="centerX" id="dHL-hu-AnM"/>
                                             <constraint firstAttribute="height" constant="1000" id="dvj-Ni-aSE"/>
                                             <constraint firstItem="Ld5-eM-3c7" firstAttribute="width" secondItem="aor-nQ-Dvn" secondAttribute="width" id="kPU-AW-NJI"/>
-                                            <constraint firstItem="Ld5-eM-3c7" firstAttribute="height" secondItem="aor-nQ-Dvn" secondAttribute="height" id="meI-3K-pzj"/>
+                                            <constraint firstItem="Ld5-eM-3c7" firstAttribute="height" secondItem="aor-nQ-Dvn" secondAttribute="height" constant="17" id="meI-3K-pzj"/>
                                             <constraint firstItem="Ld5-eM-3c7" firstAttribute="centerX" secondItem="BSI-Pz-E1z" secondAttribute="centerX" id="oJ9-LJ-wav"/>
                                             <constraint firstItem="Ld5-eM-3c7" firstAttribute="top" secondItem="aor-nQ-Dvn" secondAttribute="bottom" constant="16" id="wRM-TO-ub6"/>
                                         </constraints>
@@ -191,11 +223,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSO-QQ-7rB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821.25" y="-8.4507042253521121"/>
+            <point key="canvasLocation" x="820.79999999999995" y="-8.995502248875562"/>
         </scene>
     </scenes>
     <resources>
         <image name="Background Image" width="375" height="667"/>
+        <image name="Call Button" width="36" height="36"/>
         <image name="Help Button" width="24" height="24"/>
     </resources>
 </document>

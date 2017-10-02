@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B73ABA1DA0D89BA7D8CBE3CF72158032'
-               BlueprintName = 'SAConfettiView-SAConfettiView'
+               BlueprintIdentifier = 'B8AD3F0D1BA78799BF3B45CF4271E157'
+               BlueprintName = 'Whisper'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SAConfettiView.bundle'>
+               BuildableName = 'Whisper.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -34,20 +34,21 @@ extension ExpandingCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell  {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath)
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         UserDefaults.standard.synchronize()
         var checkboxTrackerArray: [Bool] = UserDefaults.standard.array(forKey: "checkboxTrackerArray") as! [Bool]
-        guard let expandingCell = cell as? CollectionViewCell else { return }
+        let expandingCell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath) as! CollectionViewCell
+        expandingCell.layer.shouldRasterize = true;
+        expandingCell.layer.rasterizationScale = UIScreen.main.scale;
         expandingCell.completionCheckBox?.setOn(checkboxTrackerArray[indexPath.row], animated: false)
         expandingCell.cellIsOpen(false, animated: false)
+        /* Fix this: Loading large images is causing the lag when scrolling in UICollectionView. The first-time resizing of large images to fit the view
+         is what is causing the slowdowns.  */
         expandingCell.backgroundImageView?.image = UIImage(named: TaskConstants.tasks[indexPath.row][0])
         expandingCell.taskLabel?.text = "Task \(indexPath.row + 1)"
         expandingCell.integerLabel = indexPath.row
         expandingCell.completionCheckBox?.on = checkboxTrackerArray[indexPath.row]
-        currentItemLabel.text = "\(indexPath.row + 1) / \(TaskConstants.tasks.count)"
+        self.currentItemLabel.text = "\(indexPath.row + 1) / \(TaskConstants.tasks.count)"
+        return expandingCell;
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
