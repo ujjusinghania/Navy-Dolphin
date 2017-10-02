@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -49,6 +50,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgT-YT-33o">
+                                <rect key="frame" x="166" y="633" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99489795918367352" green="0.98979591836734693" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -56,8 +63,10 @@
                             <constraint firstItem="4Rb-tI-18h" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="7z9-yb-oyb"/>
                             <constraint firstItem="4Rb-tI-18h" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="N0D-ej-mqN"/>
                             <constraint firstItem="eRX-2R-G7V" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="Vh6-eQ-Qnq"/>
+                            <constraint firstItem="eRX-2R-G7V" firstAttribute="baseline" secondItem="IgT-YT-33o" secondAttribute="firstBaseline" constant="18" id="WhP-jf-Xyx"/>
                             <constraint firstItem="4Rb-tI-18h" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="iXz-Lk-iJO"/>
                             <constraint firstItem="eRX-2R-G7V" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="kwN-aW-Ma4"/>
+                            <constraint firstItem="IgT-YT-33o" firstAttribute="centerX" secondItem="eRX-2R-G7V" secondAttribute="centerX" id="or8-yp-Num"/>
                             <constraint firstItem="4Rb-tI-18h" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="q0U-R4-p8N"/>
                             <constraint firstItem="eRX-2R-G7V" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="vM3-eB-e04"/>
                         </constraints>
@@ -75,11 +84,12 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="confettiView" destination="eRX-2R-G7V" id="SAM-z7-a5i"/>
+                        <outlet property="currentItemLabel" destination="IgT-YT-33o" id="1bx-K1-iMi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="-7"/>
+            <point key="canvasLocation" x="36" y="-7.6461769115442282"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pfD-e5-0NM">

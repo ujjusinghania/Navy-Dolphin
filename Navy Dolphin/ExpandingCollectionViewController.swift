@@ -13,6 +13,7 @@ import SAConfettiView
 
 class ExpandingCollectionViewController: ExpandingViewController {
     
+    @IBOutlet weak var currentItemLabel: UILabel!
     @IBOutlet weak var confettiView: SAConfettiView!
     
     override func viewDidLoad() {
@@ -46,6 +47,7 @@ extension ExpandingCollectionViewController {
         expandingCell.taskLabel?.text = "Task \(indexPath.row + 1)"
         expandingCell.integerLabel = indexPath.row
         expandingCell.completionCheckBox?.on = checkboxTrackerArray[indexPath.row]
+        currentItemLabel.text = "\(indexPath.row + 1) / \(TaskConstants.tasks.count)"
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
