@@ -47,6 +47,7 @@ extension ExpandingCollectionViewController {
         expandingCell.taskLabel?.text = "Task \(indexPath.row + 1)"
         expandingCell.integerLabel = indexPath.row
         expandingCell.completionCheckBox?.on = checkboxTrackerArray[indexPath.row]
+        expandingCell.taskDescriptionLabel.text = TaskConstants.tasks[indexPath.row][1]
         self.currentItemLabel.text = "\(indexPath.row + 1) / \(TaskConstants.tasks.count)"
         return expandingCell;
     }

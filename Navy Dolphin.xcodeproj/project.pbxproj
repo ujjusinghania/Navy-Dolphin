@@ -149,8 +149,8 @@
 				D91EDF261F6C6C390025C90F /* Assets.xcassets */,
 				D91EDF281F6C6C390025C90F /* LaunchScreen.storyboard */,
 				D91EDF2B1F6C6C390025C90F /* Info.plist */,
-				D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */,
 				D91EDF4D1F6C6D7F0025C90F /* CollectionViewCell.swift */,
+				D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */,
 				D91EDF4E1F6C6D7F0025C90F /* CollectionViewCell.xib */,
 			);
 			path = "Navy Dolphin";

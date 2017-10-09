@@ -11,10 +11,12 @@ import expanding_collection
 import BEMCheckBox
 
 class CollectionViewCell: BasePageCollectionCell {
-
+    
+    @IBOutlet weak var taskDescriptionLabel: UILabel!
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var completionCheckBox: BEMCheckBox!
+    @IBOutlet weak var lockImageView: UIImageView!
     
     var integerLabel: Int?
     

@@ -21,18 +21,18 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16m-g9-8EO">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="300"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axe-Xi-YbR">
-                                <rect key="frame" x="24" y="204" width="192" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axe-Xi-YbR">
+                                <rect key="frame" x="24" y="160.5" width="192" height="107.5"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum fringilla dapibus. Suspendisse potenti. Vivamus tincidunt massa at nulla lacinia, a tristique ipsum malesuada. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="axe-Xi-YbR" secondAttribute="bottom" constant="32" id="1yg-U7-xHs"/>
                             <constraint firstItem="axe-Xi-YbR" firstAttribute="leading" secondItem="16m-g9-8EO" secondAttribute="leading" constant="24" id="3Pe-ae-O2z"/>
-                            <constraint firstAttribute="bottom" secondItem="axe-Xi-YbR" secondAttribute="bottom" constant="24" id="Cxp-kG-qVv"/>
                             <constraint firstAttribute="height" constant="300" id="Pcv-DP-uQv"/>
                             <constraint firstAttribute="width" constant="240" id="pO9-p5-WGt"/>
                             <constraint firstAttribute="trailing" secondItem="axe-Xi-YbR" secondAttribute="trailing" constant="24" id="ynZ-Ex-4uw"/>
@@ -41,7 +41,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBr-TK-iF9">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="300"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="014" translatesAutoresizingMaskIntoConstraints="NO" id="Jkg-Ol-7ps">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="012" translatesAutoresizingMaskIntoConstraints="NO" id="Jkg-Ol-7ps">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -51,7 +51,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqZ-s7-WZi" customClass="BEMCheckBox">
+                            <view multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="lqZ-s7-WZi" customClass="BEMCheckBox">
                                 <rect key="frame" x="200" y="260" width="24" height="24"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -89,6 +89,12 @@
                                     <action selector="checkBoxActivated:" destination="gTV-IL-0wX" eventType="valueChanged" id="9KN-3v-AAz"/>
                                 </connections>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lock Button" translatesAutoresizingMaskIntoConstraints="NO" id="DQ4-hJ-3lu">
+                                <rect key="frame" x="108" y="8" width="25" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -116,12 +122,15 @@
                 <outlet property="completionCheckBox" destination="lqZ-s7-WZi" id="qz2-nv-Tay"/>
                 <outlet property="frontConstraintY" destination="f54-MU-PJ1" id="hVe-0z-QxJ"/>
                 <outlet property="frontContainerView" destination="YBr-TK-iF9" id="PU2-zG-Z6k"/>
+                <outlet property="lockImageView" destination="DQ4-hJ-3lu" id="9T9-km-a0E"/>
+                <outlet property="taskDescriptionLabel" destination="axe-Xi-YbR" id="7ao-i3-djm"/>
                 <outlet property="taskLabel" destination="twI-oh-Y6P" id="FQb-Jh-dgV"/>
             </connections>
             <point key="canvasLocation" x="129" y="179"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="014" width="480" height="299"/>
+        <image name="012" width="750" height="500"/>
+        <image name="Lock Button" width="36" height="36"/>
     </resources>
 </document>

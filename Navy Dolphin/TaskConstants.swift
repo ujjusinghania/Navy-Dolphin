@@ -11,9 +11,9 @@ import Foundation
 struct TaskConstants {
     
     static var tasks: [[String]] = [
-        ["001", ""],
-        ["002", ""],
-        ["003", ""],
+        ["001", "Get dressed and go for a walk around your neighbourhood."],
+        ["002", "Listen to your favorite song and dance to it."],
+        ["003", "Have a meal with your family members or your friends."],
         ["004", ""],
         ["005", ""],
         ["006", ""],
