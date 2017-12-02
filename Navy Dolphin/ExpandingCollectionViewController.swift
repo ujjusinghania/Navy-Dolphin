@@ -25,6 +25,13 @@ class ExpandingCollectionViewController: ExpandingViewController {
     }
 }
 
+/*
+ 
+ For confetti, as soon as the user completes the task, check if the current date is > saved date.
+    If yes, start confetti.
+    If no, confetti will already be on.
+ 
+ */
 
 // Collection View Methods
 extension ExpandingCollectionViewController {

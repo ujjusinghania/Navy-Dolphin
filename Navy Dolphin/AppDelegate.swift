@@ -20,6 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.standard.set(Array(repeating: false, count: TaskConstants.tasks.count), forKey: "checkboxTrackerArray")
             UserDefaults.standard.set(true, forKey: "HasLaunchedOnce")
         }
+        
+        let formatter = DateFormatter()
+        let currentDate = formatter.string(from: Date())
+        if ((UserDefaults.standard.string(forKey: "Confetti") == nil)) {
+            UserDefaults.standard.set(currentDate, forKey: "Confetti")
+        }
+        
         return true
     }
 
