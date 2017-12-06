@@ -15,6 +15,11 @@ class ExpandingCollectionViewController: ExpandingViewController {
     
     @IBOutlet weak var currentItemLabel: UILabel!
     @IBOutlet weak var confettiView: SAConfettiView!
+    var confettiBool: Bool = false
+    
+    override func viewWillAppear(_ animated: Bool) {
+        checkConfetti()
+    }
     
     override func viewDidLoad() {
         itemSize = CGSize(width: 240, height: 300)
@@ -24,14 +29,6 @@ class ExpandingCollectionViewController: ExpandingViewController {
         collectionView?.register(nib, forCellWithReuseIdentifier: String(describing: CollectionViewCell.self))
     }
 }
-
-/*
- 
- For confetti, as soon as the user completes the task, check if the current date is > saved date.
-    If yes, start confetti.
-    If no, confetti will already be on.
- 
- */
 
 // Collection View Methods
 extension ExpandingCollectionViewController {
@@ -44,9 +41,6 @@ extension ExpandingCollectionViewController {
         UserDefaults.standard.synchronize()
         var checkboxTrackerArray: [Bool] = UserDefaults.standard.array(forKey: "checkboxTrackerArray") as! [Bool]
         let expandingCell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath) as! CollectionViewCell
-        expandingCell.layer.shouldRasterize = true;
-        expandingCell.layer.rasterizationScale = UIScreen.main.scale;
-        expandingCell.completionCheckBox?.setOn(checkboxTrackerArray[indexPath.row], animated: false)
         expandingCell.cellIsOpen(false, animated: false)
         /* Fix this: Loading large images is causing the lag when scrolling in UICollectionView. The first-time resizing of large images to fit the view
          is what is causing the slowdowns.  */
@@ -56,11 +50,13 @@ extension ExpandingCollectionViewController {
         expandingCell.completionCheckBox?.on = checkboxTrackerArray[indexPath.row]
         expandingCell.taskDescriptionLabel.text = TaskConstants.tasks[indexPath.row][1]
         self.currentItemLabel.text = "\(indexPath.row + 1) / \(TaskConstants.tasks.count)"
+        checkConfetti()
         return expandingCell;
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell, currentIndex == indexPath.row else { return }
+        checkConfetti()
         if cell.isOpened == false {
             cell.cellIsOpen(true, animated: true)
         } else {
@@ -73,9 +69,28 @@ extension ExpandingCollectionViewController {
 extension ExpandingCollectionViewController {
     
     func startConfettiFall() {
-        confettiView.intensity = 1
-        confettiView.type = .Triangle
-        confettiView.startConfetti()
+        if (!confettiBool) {
+            confettiView.intensity = 1
+            confettiView.type = .Triangle
+            confettiView.startConfetti()
+            confettiBool = true
+        }
+    }
+    
+    func stopConfettiFall() {
+        confettiView.stopConfetti()
+        confettiBool = false
+    }
+    
+    func checkConfetti() {
+        let formatter = DateFormatter()
+        let currentDate = formatter.string(from: Date())
+        if (currentDate == UserDefaults.standard.string(forKey: "Confetti") && UserDefaults.standard.string(forKey: "FinishedOneTask") != nil) {
+            startConfettiFall()
+        }
+        else {
+            stopConfettiFall()
+        }
     }
 }
 
