@@ -22,17 +22,16 @@ class CollectionViewCell: BasePageCollectionCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
     @IBAction func checkBoxActivated(_ sender: Any) {
         UserDefaults.standard.synchronize()
         var checkboxTrackerArray: [Bool] = UserDefaults.standard.array(forKey: "checkboxTrackerArray") as! [Bool]
         (completionCheckBox).setOn(!checkboxTrackerArray[integerLabel!], animated: true)
         checkboxTrackerArray[integerLabel!] = !checkboxTrackerArray[integerLabel!]
-//        completionCheckBox.minimumTouchSize = CGSize(width: 0, height: 0)
         UserDefaults.standard.removeObject(forKey: "checkboxTrackerArray")
         UserDefaults.standard.set(checkboxTrackerArray, forKey: "checkboxTrackerArray")
         UserDefaults.standard.set(true, forKey: "FinishedOneTask")
+        ExpandingCollectionViewController.createWhisper(checkboxTrackerArray[integerLabel!], taskLabel.text!)
     }
 }

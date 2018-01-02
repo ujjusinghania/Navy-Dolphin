@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import expanding_collection
 import SAConfettiView
+import Whisper
 
 class ExpandingCollectionViewController: ExpandingViewController {
     
@@ -90,6 +91,22 @@ extension ExpandingCollectionViewController {
         }
         else {
             stopConfettiFall()
+        }
+    }
+    
+    static func createWhisper(_ boolCheck: Bool, _ taskLabel: String) {
+        if (boolCheck) {
+            let murmur = Murmur(title: "\(taskLabel) completed.")
+            
+            // Show and hide a message after delay
+            Whisper.show(whistle: murmur, action: .show(2.0))
+        }
+        else {
+            let murmur = Murmur(title: "\(taskLabel) uncompleted.")
+            
+            // Show and hide a message after delay
+            Whisper.show(whistle: murmur, action: .show(2.0))
+            
         }
     }
 }
