@@ -73,7 +73,7 @@ extension ExpandingCollectionViewController {
         if (!confettiBool) {
             confettiView.intensity = 1
             confettiView.type = .Triangle
-            confettiView.startConfetti()
+          //  confettiView.startConfetti()
             confettiBool = true
         }
     }
@@ -96,13 +96,13 @@ extension ExpandingCollectionViewController {
     
     static func createWhisper(_ boolCheck: Bool, _ taskLabel: String) {
         if (boolCheck) {
-            let murmur = Murmur(title: "\(taskLabel) completed.")
+            let murmur = Murmur(title: "\(taskLabel) marked as finished.")
             
             // Show and hide a message after delay
             Whisper.show(whistle: murmur, action: .show(2.0))
         }
         else {
-            let murmur = Murmur(title: "\(taskLabel) uncompleted.")
+            let murmur = Murmur(title: "\(taskLabel) marked as unfinished.")
             
             // Show and hide a message after delay
             Whisper.show(whistle: murmur, action: .show(2.0))

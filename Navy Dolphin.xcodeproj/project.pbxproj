@@ -17,6 +17,7 @@
 		D91EDF401F6C6C390025C90F /* Navy_DolphinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF3F1F6C6C390025C90F /* Navy_DolphinUITests.swift */; };
 		D91EDF4F1F6C6D7F0025C90F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EDF4D1F6C6D7F0025C90F /* CollectionViewCell.swift */; };
 		D91EDF501F6C6D7F0025C90F /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91EDF4E1F6C6D7F0025C90F /* CollectionViewCell.xib */; };
+		D9BB91D62020160100BC7FFC /* ExtrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB91D52020160100BC7FFC /* ExtrasViewController.swift */; };
 		D9CE81F61F6C8A7300FFDF30 /* TaskConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE81F51F6C8A7300FFDF30 /* TaskConstants.swift */; };
 		D9F381B11F6C85F700E644E2 /* ExpandingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */; };
 		ECE992CA8C90A68EAF98315A /* Pods_Navy_Dolphin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F6DB1A689F1AB7519BEFA7 /* Pods_Navy_Dolphin.framework */; };
@@ -61,6 +62,7 @@
 		D91EDF411F6C6C390025C90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91EDF4D1F6C6D7F0025C90F /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		D91EDF4E1F6C6D7F0025C90F /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		D9BB91D52020160100BC7FFC /* ExtrasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasViewController.swift; sourceTree = "<group>"; };
 		D9CE81F51F6C8A7300FFDF30 /* TaskConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskConstants.swift; sourceTree = "<group>"; };
 		D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandingCollectionViewController.swift; sourceTree = "<group>"; };
 		F6D7EB7A77FAE97D0A6A30D2 /* Pods_Navy_DolphinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Navy_DolphinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,7 @@
 				D91EDF4D1F6C6D7F0025C90F /* CollectionViewCell.swift */,
 				D9F381B01F6C85F700E644E2 /* ExpandingCollectionViewController.swift */,
 				D91EDF4E1F6C6D7F0025C90F /* CollectionViewCell.xib */,
+				D9BB91D52020160100BC7FFC /* ExtrasViewController.swift */,
 			);
 			path = "Navy Dolphin";
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9BB91D62020160100BC7FFC /* ExtrasViewController.swift in Sources */,
 				D9F381B11F6C85F700E644E2 /* ExpandingCollectionViewController.swift in Sources */,
 				D91EDF1E1F6C6C390025C90F /* AppDelegate.swift in Sources */,
 				D91EDF4F1F6C6D7F0025C90F /* CollectionViewCell.swift in Sources */,
