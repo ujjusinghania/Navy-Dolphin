@@ -22,10 +22,18 @@ struct TaskConstants {
         ["009", "Eat a tub of your favorite ice-cream."],
         ["010", "Go the gym and work out."],
         ["011", "Read your favorite book."],
-//        ["012", ""],
-//        ["013", ""],
-//        ["014", ""],
-//        ["015", ""]
+        ["012", "Meet with a friend and set a week’s worth of goals together."],
+        ["013", "Download a mindfulness app and meditate for 7 minutes."],
+        ["014", "Write down three things you are grateful for and keep the note in your pocket all day."],
+        ["015", "Call an old friend who you have been too busy to call."],
+        ["016", "Start an exercise and food journal on your phone."],
+        ["017", "Choose a time to go to sleep and stick to it for the next 4 days."],
+        ["018", "Talk to a loved one about your communication styles."],
+        ["019", "Think of three actions you can do to play to your strengths  Perform them throughout the week."],
+        ["020", "Go grocery shopping and buy only non-processed foods."],
+        ["021", "List two areas of your life where you want to be more optimistic."],
+        ["022", "Make a plan to limit some of the choices in your life for the next week."],
+        ["023", "Write down the most significant lesson you learned from the SOH."]
     ]
     
 }

@@ -149,7 +149,7 @@ extension BasePageCollectionCell {
       $0.layer.masksToBounds                       = false;
       $0.layer.shadowColor                         = UIColor.black.cgColor
       $0.layer.shadowRadius                        = 10
-      $0.layer.shadowOpacity                       = 0.3
+      $0.layer.shadowOpacity                       = 0.3 
       $0.layer.shadowOffset                        = CGSize(width: 0, height:0)
     }
     contentView.insertSubview(shadow, belowSubview: view)
